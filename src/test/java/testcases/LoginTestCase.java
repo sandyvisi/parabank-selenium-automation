@@ -24,6 +24,7 @@ public class LoginTestCase {
 
 		login = new LoginParabank();
 		login.loginActions(userName, password);
+		System.out.println();
 
 	}
 
