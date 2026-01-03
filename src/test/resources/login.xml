@@ -9,12 +9,9 @@
 
 	<parameter name="os" value="windows 11"></parameter>
 	<parameter name="browser" value="chrome"></parameter>
-
-
-
 	<test name="login test">
 		<classes>
-			<class name="testcases.LoginTestCase"></class>
+			<class name="testcases.RegisterTestCase"></class>
 		</classes>
 	</test>
 </suite>
