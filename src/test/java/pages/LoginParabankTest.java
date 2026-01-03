@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import base.BaseClass;
 
-public class LoginParabank extends BaseClass {
+public class LoginParabankTest extends BaseClass {
 	private By userNameLocator = By.xpath("//input[@name='username']");
 	private By passwordLocator = By.xpath("//input[@name='password']");
 	private By submitLocator = By.xpath("//input[@class='button']");

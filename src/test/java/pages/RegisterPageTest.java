@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import base.BaseClass;
 
-public class RegisterPage extends BaseClass {
+public class RegisterPageTest extends BaseClass {
 
 	private By registerLinkLocator = By.xpath("//a[text()='Register']");
 

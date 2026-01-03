@@ -5,12 +5,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
-import pages.LoginParabank;
+import pages.LoginParabankTest;
 
 public class LoginTestCase {
 
 	BaseClass base;
-	LoginParabank login;
+	LoginParabankTest login;
 
 	@BeforeClass(groups = "smoke")
 	public void openBrowser() {
@@ -22,7 +22,7 @@ public class LoginTestCase {
 	@Test(dataProvider = "logindata", dataProviderClass = dataproviderclasses.DataProviderClass.class)
 	public void login(String userName, String password) {
 
-		login = new LoginParabank();
+		login = new LoginParabankTest();
 		login.loginActions(userName, password);
 		System.out.println();
 

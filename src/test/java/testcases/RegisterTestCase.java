@@ -6,13 +6,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
-import pages.RegisterPage;
+import pages.RegisterPageTest;
 
 public class RegisterTestCase {
 
 	BaseClass base;
 
-	RegisterPage registerPage;
+	RegisterPageTest registerPage;
 
 	@BeforeClass(groups = "smoke")
 	public void openBrowser() {
@@ -25,7 +25,7 @@ public class RegisterTestCase {
 	public void login(String firstName, String lastName, String address, String city, String state, String zipcode,
 			String phoneNumber, String ssnNumber, String userName, String password, String repeatPassword) {
 
-		registerPage = new RegisterPage();
+		registerPage = new RegisterPageTest();
 
 		registerPage.registerFunctions(firstName, lastName, address, city, state, zipcode, phoneNumber, ssnNumber,
 				userName, password, repeatPassword);
