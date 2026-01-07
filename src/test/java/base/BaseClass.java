@@ -1,13 +1,11 @@
 package base;
 
-import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,19 +19,6 @@ public class BaseClass {
 
 	public void init() {
 
-//		options = new ChromeOptions();
-
-//		options.setAcceptInsecureCerts(false);
-////		accepting the insecure webapps from privacy issue
-//
-//		options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
-
-//		options.addArguments("--incognito");
-
-//		File adBlockerCrxFile = new File("D:\\selenium-files\\crxforadblocker\\adblock.crx");
-//
-//		options.addExtensions(adBlockerCrxFile);
-
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://parabank.parasoft.com/parabank/register.htm");
@@ -43,13 +28,10 @@ public class BaseClass {
 		expWait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		js = (JavascriptExecutor) driver;
 		actions = new Actions(driver);
-
 	}
 
 	public void tearDown() {
-
 		driver.quit();
-
 	}
 
 	public String urlAssert() {
@@ -77,6 +59,11 @@ public class BaseClass {
 
 		driver.findElement(locator).sendKeys(text);
 
+	}
+
+	public String getCurrentUrl() {
+
+		return driver.getCurrentUrl();
 	}
 
 }

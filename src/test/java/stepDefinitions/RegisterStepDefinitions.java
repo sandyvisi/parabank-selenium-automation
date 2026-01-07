@@ -15,15 +15,11 @@ public class RegisterStepDefinitions {
 	BaseClass base;
 	RegisterPageTest reigsterPage;
 
-	@Before
-	public void setUp() {
+	@Given("user landed to register page of parabank")
+	public void user_landed_to_register_page_of_parabank() {
 		base = new BaseClass();
 		base.init();
 		reigsterPage = new RegisterPageTest();
-	}
-
-	@Given("user landed to register page of parabank")
-	public void user_landed_to_register_page_of_parabank() {
 
 	}
 
@@ -41,12 +37,8 @@ public class RegisterStepDefinitions {
 
 	@Then("user validated the function")
 	public void user_validated_the_function() {
-
-	}
-
-	@After
-	public void tearDown() {
 		base.tearDown();
+
 	}
 
 }

@@ -130,5 +130,10 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.4.1</version>
 		</dependency>
+		<dependency>
+			<groupId>automation-framework</groupId>
+			<artifactId>interview-purpose</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

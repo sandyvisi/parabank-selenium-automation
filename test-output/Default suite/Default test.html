@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 07 15:43:55 IST 2026</td>
+<td>Started on:</td><td>Wed Jan 07 19:58:54 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9223 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7566 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,10 +76,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='stepDefinitions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepDefinitions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user can able to register", "test the feature file"</td>
-<td></td>
-<td>7</td>
-<td>stepDefinitions.TestRunner@26b3fd41</td></tr>
+<td title='stepDefinitions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: stepDefinitions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successfull after registration", "login to the parabank using the credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [ParaBank | Welcome | Online Banking] but found [https://parabank.parasoft.com/parabank/login.htm;jsessionid=41F6C4B717D339A6CF358665B5CA2477]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.LoginStepDefinitions.loggedIn(LoginStepDefinitions.java:41)
+	at ✽.user is able to login propery(file:///D:/eclipse-workspace/parabank-selenium-automation/src/test/resources/Features/Login.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace872592585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace872592585'><pre>java.lang.AssertionError: expected [ParaBank | Welcome | Online Banking] but found [https://parabank.parasoft.com/parabank/login.htm;jsessionid=41F6C4B717D339A6CF358665B5CA2477]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.LoginStepDefinitions.loggedIn(LoginStepDefinitions.java:41)
+	at ✽.user is able to login propery(file:///D:/eclipse-workspace/parabank-selenium-automation/src/test/resources/Features/Login.feature:6)
+</pre></div></td>
+<td>6</td>
+<td>stepDefinitions.TestRunner@1757cd72</td></tr>
 </table><p>
 </body>
 </html>

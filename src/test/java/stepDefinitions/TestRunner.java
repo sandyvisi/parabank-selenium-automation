@@ -11,8 +11,9 @@ import io.cucumber.testng.CucumberOptions;
 //}, monochrome = true // cleaner console output
 //)
 
-@CucumberOptions(features = "D:\\eclipse-workspace\\parabank-selenium-automation\\src\\test\\resources\\Features", glue = "stepDefinitions", plugin = {
-		"pretty", "html:target/cucumber-reports.html" }, tags = "@smokeTest")
+@CucumberOptions(features = "D:\\eclipse-workspace\\parabank-selenium-automation\\src\\test\\resources\\Features\\Login.feature", glue = "stepDefinitions",
+plugin = {"pretty", "html:target/cucumber-reports.html" },
+dryRun=false)
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 
